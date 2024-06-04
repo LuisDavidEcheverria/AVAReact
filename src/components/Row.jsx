@@ -41,7 +41,7 @@ Row.propTypes = {
 };
 
 export function Desc(props) {
-  return <div className="col-md-6 ">{props.children}</div>;
+  return <div className="col-md-6">{props.children}</div>;
 }
 
 Desc.propTypes = {
@@ -56,46 +56,46 @@ export function Carrusel(props) {
   const captions = Children.toArray(props.children);
   return (
     <div className="col-md-6">
-      <Carousel>
-        {rutas.map((ruta, index) => (
-          <Carousel.Item key={index}>
-            <img src={ruta} className=" miniCarrusel-img" draggable="false" />
-            <Carousel.Caption>{captions[index] || ""}</Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <div className="carousel-container">
+        <Carousel>
+          {rutas.map((ruta, index) => (
+            <Carousel.Item key={index}>
+              <img src={ruta} className=" miniCarrusel-img" draggable="false" />
+              <Carousel.Caption>{captions[index] || ""}</Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+        <div className="text-center precio">
+          <h3>{props.precio}</h3>
+        </div>
+      </div>
     </div>
   );
 }
 Carrusel.propTypes = {
   src: PropTypes.array.isRequired,
   children: PropTypes.node,
+  precio: PropTypes.string,
 };
 export function Incluye(props) {
   const lista = Children.toArray(props.children);
   const { t } = useTranslation();
   const tilt = props.inclinacion || "left";
   return (
-    <div className="row">
-      <div className="col-5">
-        <h3 className="text-center precio">{props.precio}</h3>
-      </div>
-      <div className="col-7">
-        <div className={"postit " + tilt}>
-          <h5 className="text-center">{t("incluye")}</h5>
-          <ul>
-            {lista.map((elemento, index) => (
-              <li key={index}>{elemento}</li>
-            ))}
-          </ul>
-        </div>
+    <div className="row w-50 ">
+      <div className={"postit " + tilt}>
+        <h5 className="text-center">{t("incluye")}</h5>
+        <ul>
+          {lista.map((elemento, index) => (
+            <li key={index}>{elemento}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
 }
 Incluye.propTypes = {
   children: PropTypes.node.isRequired,
-  precio: PropTypes.string.isRequired,
   inclinacion: PropTypes.string,
 };
 export default Row;

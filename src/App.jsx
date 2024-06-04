@@ -65,13 +65,13 @@ export default function MyApp() {
             </h2>
             <h3 className="medidas text-center"> {"13'x13'"}</h3>
             <p>{t("inflablesDesc")}</p>
-            <Incluye precio={"$120"}>
+            <Incluye>
               <p>{t("entrega")}</p>
               <p>{t("instalar")}</p>
               <p>{t("recoger")}</p>
             </Incluye>
           </Desc>
-          <Carrusel src={fotosJumpers}>
+          <Carrusel src={fotosJumpers} precio={"$120"}>
             <>
               <h1>{t("inflable") + "1"}</h1>
             </>
@@ -80,12 +80,12 @@ export default function MyApp() {
         </Row>
 
         <Row>
-          <Carrusel src={fotosMiniSlide} />
+          <Carrusel src={fotosMiniSlide} precio={"$160"} />
           <Desc>
             <h2 className="text-center">Mini-slide</h2>
             <h3 className="medidas text-center"> {"13'x21'"}</h3>
             <p>{t("minislideDesc")}</p>
-            <Incluye precio={"$160"} inclinacion="right">
+            <Incluye inclinacion="right">
               <p>{t("entrega")}</p>
               <p>{t("instalar")}</p>
               <p>{t("recoger")}</p>
@@ -96,19 +96,19 @@ export default function MyApp() {
           <Desc>
             <h2 className="text-center">{t("sillas")}</h2>
             <p>{t("sillasDesc")}</p>
-            <Incluye precio={"$1.5 c/u"}>
+            <Incluye>
               <p>{t("entrega")}</p>
               <p>{t("recoger")}</p>
             </Incluye>
           </Desc>
-          <Carrusel src={fotosSillas} />
+          <Carrusel src={fotosSillas} precio={"$1.5 c/u"} />
         </Row>
         <Row>
-          <Carrusel src={fotosMesas} />
+          <Carrusel src={fotosMesas} precio={"$7.0 c/u"} />
           <Desc>
             <h2 className="text-center">{t("mesas")}</h2>
             <p>{t("mesasDesc")}</p>
-            <Incluye precio={"$7.0 c/u"} inclinacion="right">
+            <Incluye inclinacion="right">
               <p>{t("entrega")}</p>
               <p>{t("recoger")}</p>
             </Incluye>
@@ -120,16 +120,16 @@ export default function MyApp() {
             <h5 className="medidas text-center"> {"20'x20' / 20'x30'"}</h5>
 
             <p>{t("carpasDesc")}</p>
-            <Incluye precio={"$200  $250"}>
+            <Incluye>
               <p>{t("entrega")}</p>
               <p>{t("instalar")}</p>
               <p>{t("recoger")}</p>
             </Incluye>
           </Desc>
-          <Carrusel src={fotosCarpas} />
+          <Carrusel src={fotosCarpas} precio={"$200/$250"} />
         </Row>
         <Row>
-          <Carrusel src={fotosHeaters} />
+          <Carrusel src={fotosHeaters} precio={"$60"} />
           <Desc>
             <h2 className="text-center">
               <Trans i18nKey="calentadores">
@@ -138,7 +138,7 @@ export default function MyApp() {
               </Trans>
             </h2>
             <p>{t("calentadoresDesc")}</p>
-            <Incluye precio={"$60"} inclinacion="right">
+            <Incluye inclinacion="right">
               <p>{t("entrega")}</p>
               <p>{t("instalar")}</p>
               <p>{t("recoger")}</p>
@@ -150,13 +150,13 @@ export default function MyApp() {
           <Desc>
             <h2 className="text-center">{t("generador")}</h2>
             <p>{t("generadorDesc")}</p>
-            <Incluye precio={"$50"}>
+            <Incluye>
               <p>{t("entrega")}</p>
               <p>{t("recoger")}</p>
               <p>{t("gasolina")}</p>
             </Incluye>
           </Desc>
-          <Carrusel src={fotosGenerador}></Carrusel>
+          <Carrusel src={fotosGenerador} precio={"$50"} />
         </Row>
       </div>
 
