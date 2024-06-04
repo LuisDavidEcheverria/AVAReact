@@ -2,7 +2,8 @@ import { Children, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Carousel from "react-bootstrap/Carousel";
 import { motion, useAnimation, useInView } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
+import { Container } from "react-bootstrap";
 function Row(props) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -72,14 +73,16 @@ Carrusel.propTypes = {
 };
 export function Incluye(props) {
   const lista = Children.toArray(props.children);
+  const { t } = useTranslation();
+  const tilt = props.inclinacion || "left";
   return (
     <div className="row">
       <div className="col-5">
         <h3 className="text-center precio">{props.precio}</h3>
       </div>
       <div className="col-7">
-        <div className="postit">
-          <h5 className="text-center">Incluye:</h5>
+        <div className={"postit " + tilt}>
+          <h5 className="text-center">{t("incluye")}</h5>
           <ul>
             {lista.map((elemento, index) => (
               <li key={index}>{elemento}</li>
@@ -93,5 +96,6 @@ export function Incluye(props) {
 Incluye.propTypes = {
   children: PropTypes.node.isRequired,
   precio: PropTypes.string.isRequired,
+  inclinacion: PropTypes.string,
 };
 export default Row;

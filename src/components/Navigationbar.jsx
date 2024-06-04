@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import { motion } from "framer-motion";
-function NavigationBar(props) {
+import { useTranslation } from "react-i18next";
+function NavigationBar() {
   const [clicked, setClicked] = useState(false);
+  const { i18n } = useTranslation();
   const handleClick = () => {
+    const idioma = i18n.language === "en" ? "es" : "en";
+    i18n.changeLanguage(idioma);
     setClicked(!clicked);
   };
 
@@ -34,8 +38,8 @@ function NavigationBar(props) {
             <img
               src={
                 clicked
-                  ? "./public/Icons/spanish.png"
-                  : "./public/Icons/english.png"
+                  ? "./public/Icons/english.png"
+                  : "./public/Icons/spanish.png"
               }
               width="32"
               height="32"
@@ -46,5 +50,4 @@ function NavigationBar(props) {
     </>
   );
 }
-export function TraducirBoton({ idioma, cambiarIdioma }) {}
 export default NavigationBar;
