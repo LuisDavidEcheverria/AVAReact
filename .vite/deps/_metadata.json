@@ -1,0 +1,100 @@
+{
+  "hash": "026de315",
+  "configHash": "43005b2a",
+  "lockfileHash": "cb94da11",
+  "browserHash": "10644eed",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "25f19209",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "70c3e413",
+      "needsInterop": true
+    },
+    "i18next": {
+      "src": "../../node_modules/i18next/dist/esm/i18next.js",
+      "file": "i18next.js",
+      "fileHash": "04b95dd8",
+      "needsInterop": false
+    },
+    "react-i18next": {
+      "src": "../../node_modules/react-i18next/dist/es/index.js",
+      "file": "react-i18next.js",
+      "fileHash": "91516de3",
+      "needsInterop": false
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "51002cf3",
+      "needsInterop": false
+    },
+    "react-bootstrap": {
+      "src": "../../node_modules/react-bootstrap/esm/index.js",
+      "file": "react-bootstrap.js",
+      "fileHash": "1d0657b8",
+      "needsInterop": false
+    },
+    "prop-types": {
+      "src": "../../node_modules/prop-types/index.js",
+      "file": "prop-types.js",
+      "fileHash": "5812673b",
+      "needsInterop": true
+    },
+    "react-bootstrap/Carousel": {
+      "src": "../../node_modules/react-bootstrap/esm/Carousel.js",
+      "file": "react-bootstrap_Carousel.js",
+      "fileHash": "c53ddbb6",
+      "needsInterop": false
+    },
+    "react-bootstrap/Container": {
+      "src": "../../node_modules/react-bootstrap/esm/Container.js",
+      "file": "react-bootstrap_Container.js",
+      "fileHash": "528375fc",
+      "needsInterop": false
+    },
+    "react-bootstrap/Navbar": {
+      "src": "../../node_modules/react-bootstrap/esm/Navbar.js",
+      "file": "react-bootstrap_Navbar.js",
+      "fileHash": "cfebc210",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-OMXOE5KJ": {
+      "file": "chunk-OMXOE5KJ.js"
+    },
+    "chunk-CE2MIXUH": {
+      "file": "chunk-CE2MIXUH.js"
+    },
+    "chunk-42S3VR26": {
+      "file": "chunk-42S3VR26.js"
+    },
+    "chunk-7GWJ3FNA": {
+      "file": "chunk-7GWJ3FNA.js"
+    },
+    "chunk-BFTOFCVM": {
+      "file": "chunk-BFTOFCVM.js"
+    },
+    "chunk-DYIYK56Z": {
+      "file": "chunk-DYIYK56Z.js"
+    },
+    "chunk-O3Z6M66E": {
+      "file": "chunk-O3Z6M66E.js"
+    },
+    "chunk-QY3QVPNU": {
+      "file": "chunk-QY3QVPNU.js"
+    },
+    "chunk-4BJW6OLS": {
+      "file": "chunk-4BJW6OLS.js"
+    },
+    "chunk-LQ2VYIYD": {
+      "file": "chunk-LQ2VYIYD.js"
+    }
+  }
+}
