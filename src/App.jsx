@@ -12,7 +12,7 @@ export default function MyApp() {
   const imgsCarr = [
     "Carrusel_Sillas.jpeg",
     "Carrusel_Jumpers.jpeg",
-    "Carrusel_Carpa.jpeg",
+    "Carrusel_Carpa.webp",
     "Carrusel_Minislide.jpeg",
   ];
   const fotosJumpers = [
@@ -30,10 +30,7 @@ export default function MyApp() {
     "/Images/Sillas/sillas3.jpeg",
   ];
   const fotosMesas = ["/Images/Mesas/mesa1.jpeg"];
-  const fotosGenerador = [
-    "/Images/Generadores/Generador1.jpeg",
-    "/Images/Generadores/Generador2.jpeg",
-  ];
+  const fotosGenerador = ["/Images/Generadores/Generador1.jpeg"];
   const fotosCarpas = [
     "/Images/Carpas/carpa1.jpeg",
     "/Images/Carpas/carpa2.jpeg",
@@ -52,16 +49,21 @@ export default function MyApp() {
       />
 
       <h2 className="text-center mt-3">{t("bienvenida")}</h2>
-
+      <img
+        src="/Images/confi.gif"
+        alt="Fiesta animada"
+        className="d-block mx-auto my-3 w-25 rounded"
+      />
       <h2 className="text-center mt-5 mb-3">{t("contamos")}</h2>
 
       <div className="rowContainer">
         <Row>
           <Desc>
             <h2 className="text-center">
-              <Trans i18nKey="inflabLes">
-                Inflables <span className="keyWordA"> divertidos</span>
-              </Trans>
+              <Trans
+                i18nKey="inflables"
+                components={{ 1: <span className="keyWordA" /> }}
+              />
             </h2>
             <h3 className="medidas text-center"> {"13'x13'"}</h3>
             <p>{t("inflablesDesc")}</p>
@@ -94,7 +96,12 @@ export default function MyApp() {
         </Row>
         <Row>
           <Desc>
-            <h2 className="text-center">{t("sillas")}</h2>
+            <h2 className="text-center">
+              <Trans
+                i18nKey="sillas"
+                components={{ 1: <span className="keyWordA" /> }}
+              />
+            </h2>
             <p>{t("sillasDesc")}</p>
             <Incluye>
               <p>{t("entrega")}</p>
@@ -132,10 +139,10 @@ export default function MyApp() {
           <Carrusel src={fotosHeaters} precio={"$60"} />
           <Desc>
             <h2 className="text-center">
-              <Trans i18nKey="calentadores">
-                Calentadores para
-                <span className="keyWordB">noches frescas</span>
-              </Trans>
+              <Trans
+                i18nKey="calentadores"
+                components={{ 1: <span className="keyWordB" /> }}
+              />
             </h2>
             <p>{t("calentadoresDesc")}</p>
             <Incluye inclinacion="right">
@@ -148,7 +155,12 @@ export default function MyApp() {
         </Row>
         <Row>
           <Desc>
-            <h2 className="text-center">{t("generador")}</h2>
+            <h2 className="text-center">
+              <Trans
+                i18nKey="generador"
+                components={{ 1: <span className="keyWordA" /> }}
+              />
+            </h2>
             <p>{t("generadorDesc")}</p>
             <Incluye>
               <p>{t("entrega")}</p>
@@ -158,32 +170,98 @@ export default function MyApp() {
           </Desc>
           <Carrusel src={fotosGenerador} precio={"$50"} />
         </Row>
+        <Row>
+          <Desc>
+            <h2 className="text-center">
+              <Trans
+                i18nKey="sillasResina"
+                components={{ 1: <span className="keyWordA" /> }}
+              />
+            </h2>
+            <p>{t("sillasResinaDesc")}</p>
+            <Incluye>
+              <p>{t("entrega")}</p>
+              <p>{t("recoger")}</p>
+            </Incluye>
+          </Desc>
+          <Carrusel
+            src={[
+              "/Images/SillasResina/SillaResina.jpeg",
+              "/Images/SillasResina/SillaResina2.jpeg",
+            ]}
+            precio={"$3 " + t("cadauno")}
+          />
+        </Row>
+        <Row>
+          <Carrusel
+            src={[
+              "/Images/MesasRedondas/Mesa3.jpeg",
+              "/Images/MesasRedondas/Mesa4.jpeg",
+            ]}
+            precio={"$10 " + t("cadauno")}
+          />
+          <Desc>
+            <h2 className="text-center">
+              <Trans
+                i18nKey="mesaRedonda"
+                components={{ 1: <span className="keyWordB" /> }}
+              />
+            </h2>
+            <h3 className="medidas text-center"> {"60”"}</h3>
+            <p>{t("mesaRedondaDesc")}</p>
+            <Incluye inclinacion="right">
+              <p>{t("entrega")}</p>
+              <p>{t("recoger")}</p>
+            </Incluye>
+          </Desc>
+        </Row>
+        <Row>
+          <Desc>
+            <h2 className="text-center">
+              <Trans
+                i18nKey="mantelesDelux"
+                components={{ 1: <span className="keyWordA" /> }}
+              />
+            </h2>
+            <p>{t("mantelesDesc")}</p>
+            <Incluye>
+              <p>{t("entrega")}</p>
+              <p>{t("recoger")}</p>
+            </Incluye>
+          </Desc>
+          <Carrusel
+            src={["/Images/Manteles/Mantel.jpeg"]}
+            precio={"$10 " + t("cadauno")}
+          />
+        </Row>
       </div>
 
       <Pie />
-      <motion.button
-        initial={{ scale: 1 }}
-        animate={{
-          rotateZ: [0, 5, -5, 0],
-          transition: {
-            repeat: Infinity,
-            repeatDelay: 5,
-            duration: 0.4,
-          },
-        }}
-        whileHover={{
-          scale: 1.1,
-          transition: { duration: 0.3 },
-        }}
-        whileTap={{ scale: 0.9 }}
-        className="contactButton"
-        variant="success"
+      <a
+        href="https://wa.me/17073269286"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <Container>
-          <img src="./public/Icons/whatsapp (2).png"></img>
-          {t("boton")}
-        </Container>
-      </motion.button>
+        <motion.button
+          initial={{ scale: 1 }}
+          animate={{
+            rotateZ: [0, 5, -5, 0],
+            transition: {
+              repeat: Infinity,
+              repeatDelay: 5,
+              duration: 0.4,
+            },
+          }}
+          whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+          whileTap={{ scale: 0.9 }}
+          className="contactButton"
+        >
+          <Container>
+            <img src="/Icons/whatsapp (2).png" alt="WhatsApp" width="24" />
+            {t("boton")}
+          </Container>
+        </motion.button>
+      </a>
     </>
   );
 }

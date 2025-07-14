@@ -26,8 +26,12 @@ function NavigationBar() {
             />
           </Navbar.Brand>
           <div>
-            <h5 className="text-center">AVA </h5>
-            <p className="text-center">Jumpers and Party Rentals</p>
+            <div className="text-center">
+              <h5 className="mb-0 fw-bold">AVA</h5>
+              <p className="mb-0 fs-6 text-uppercase text-light">
+                Jumpers and Party Rentals
+              </p>
+            </div>
           </div>
           <motion.button
             className="translateButton"

@@ -16,25 +16,25 @@ const resources = {
         Carpas: "",
         MiniSlide: "",
       },
+      cadauno: "c/u",
       bienvenida: "Encuentra todo lo que necesitas para tus fiestas y eventos",
       contamos: "Contamos con:",
-      inflables: "Inflables <span className= 'keyWordA'> divertidos</span>",
+      inflables: "Inflables <1>Divertidos</1>",
       inflablesDesc:
         " Añade diversión a tu fiesta con nuestros inflables.¡Los niños los adorarán!",
       minislideDesc:
         "Añade un toque de diversión extra a tu evento con nuestros minislides.",
-      sillas: "Sillas plegables",
+      sillas: "Sillas <1>Plegables</1>",
       sillasDesc: "Una opción versátil y práctica para cualquier ocasión.",
       mesas: "Mesas",
       mesasDesc: "Mesas funcionales que se adaptan a tus necesidades.",
       carpas: "Carpas",
       carpasDesc:
         "Ideales para cualquier evento al aire libre, sin importar el clima.",
-      calentadores:
-        "Calentadores para <span className='keyWordB'>noches frescas</span>",
+      calentadores: "Calentadores para <1>noches frescas</1>",
       calentadoresDesc:
         "No dejes que el clima arruine tu fiesta. Nuestros calentadores mantienen a tus invitados cómodos y cálidos durante toda la noche.",
-      generador: "Generador de luz",
+      generador: "Generador <1>de luz</1>",
       generadorDesc:
         "Asegúrate que tu evento brille con nuestros generadores de luz.",
       boton: "Contáctanos",
@@ -45,6 +45,16 @@ const resources = {
       recoger: "Recoger",
       gas: "Tanque de gas lleno",
       gasolina: "Lleno de gasolina",
+      sillasResina: "Sillas de <1>Resina</2>",
+      sillasResinaDesc:
+        "Ideales para eventos elegantes o al aire libre. Resistentes y cómodas.",
+      mesaRedonda: "Mesa <1>Redonda</1>",
+      mesaRedondaDesc:
+        "Perfecta para reuniones familiares o eventos. Robusta y espaciosa.",
+      mantelesDelux: "Manteles <1>Delux</1>",
+      mantelesDesc:
+        "Manteles premium en variedad de colores para mesas rectangulares y redondas.",
+      lavadoIncluido: "Lavado incluido",
     },
   },
   en: {
@@ -61,9 +71,10 @@ const resources = {
         Carpas: "",
         MiniSlide: "",
       },
+      cadauno: "each",
       bienvenida: "Find everything you need for your parties and events",
       contamos: "We offer:",
-      inflables: "<span className= 'keyWordA'>Funny</span> Jumpers",
+      inflables: "<1>Funny</1> Jumpers",
       inflablesDesc:
         " Add fun to your party with our jumpers, the kids will love it!",
       minislideDesc:
@@ -74,11 +85,10 @@ const resources = {
       mesasDesc: "Functional tables that adapt to your needs.",
       carpas: "Tents",
       carpasDesc: "Ideal for any outdoor event,no matter the weather.",
-      calentadores:
-        "Heaters for<span className='keyWordB'>cool evenings</span>",
+      calentadores: "Heaters for <1>cool evenings</1>",
       calentadoresDesc:
         "Don't let the weather ruin your party.Our heaters keep your guests comfortable and warm all nigth long.",
-      generador: "Power generator",
+      generador: "Power <1>generator</1>",
       generadorDesc: "Ensure your event shines with our power generators.",
       boton: "Contact Us",
       inflable: "Jumper ",
@@ -88,6 +98,16 @@ const resources = {
       recoger: "Pickup",
       gas: "Full gas tank",
       gasolina: "Full of gasoline",
+      sillasResina: "Resin <1>Chairs</1>",
+      sillasResinaDesc:
+        "Perfect for elegant or outdoor events. Sturdy and comfortable.",
+      mesaRedonda: "Round <1>Table</1>",
+      mesaRedondaDesc:
+        "Great for family gatherings or formal settings. Spacious and durable.",
+      mantelesDelux: "Deluxe <1>Tablecloths</1>",
+      mantelesDesc:
+        "Premium fabrics available in various colors for round and rectangular tables.",
+      lavadoIncluido: "Washing service included",
     },
   },
 };
